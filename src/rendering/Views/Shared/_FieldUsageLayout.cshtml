@@ -1,0 +1,17 @@
+@model HeadingAndDescription
+
+@{
+  var component = this.SitecoreComponent()!;
+}
+
+<div class="pt-3" id="@component.Id" data-e2e-id="@component.Name">
+  <h4 asp-for="Heading"></h4>
+
+  <div>
+    <sc-text asp-for="Description"></sc-text>
+  </div>
+
+  <div class="border p-2">
+    @RenderBody()
+  </div>
+</div>

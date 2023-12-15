@@ -1,0 +1,14 @@
+@model FieldUsageImage
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+<p>Plain image</p>
+<sc-img asp-for="Sample1" />
+<p>Advanced image (not editable)</p>
+<img asp-for="Sample2" class="image1" height="50" width="94" image-params="new { mw = 100, mh = 50 }" data-sample="other-attributes-pass-through" />
+<p>Srcset responsive image</p>
+<img alt="Sitecore JSS Logo"
+     sizes="(min-width: 960px) 300px, 100px"
+     class="img-fluid"
+     srcset="@Model.Sample2?.GetMediaLink(new { mw = 300 }) 300w, @Model.Sample2?.GetMediaLink(new { mw = 100 }) 100w" />

@@ -1,0 +1,62 @@
+﻿---
+ID: "2aaff7a5-5203-5cea-99e6-72ccd2286adf"
+Parent: "f589e54c-c988-55c7-9210-a1fc8a0c2caf"
+Template: "55e5dfb6-1481-5469-94f0-5bb92e67f8c7"
+Path: "/sitecore/content/KayeeDictionaryServiceDemo/home/styleguide/Page Components/Styleguide-FieldUsage-ContentList-11"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-ContentList-11"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b5ec70b-5882-5524-8d7e-5181b43978a6"
+      Hint: description
+      Value: |
+        <p>
+          <small>
+            Content Lists are a way to reference zero or more other content items.
+            Referenced items may be shared.
+            To reference a single content item, use an <em>Item Link</em> field.<br />
+            <strong>Note:</strong> Sitecore does not support inline editing of Content List fields. The value must be edited in Experience Editor by using the edit rendering fields button (looks like a pencil) with the whole component selected.
+          </small>
+        </p>
+        
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211013T135912Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "42ae4f61-ead6-53a3-8f16-acae742e4dc6"
+      Hint: localContentList
+      Value: |
+        {9DF83293-9F68-5F75-A667-AD86AA0F12C2}
+        {CF304C9F-A7A9-587D-8267-C421F6A5335D}
+    - ID: "5dddba4d-22b4-55c4-b88b-df86c1f02105"
+      Hint: sharedContentList
+      Value: |
+        {20EE7B13-A7A7-5C34-9B80-DC10248D3B8A}
+        {E170308C-CC35-5EAA-A0CC-98CD1B02B457}
+    - ID: "82c593fe-d8ab-52e9-8e4e-5e7699457d81"
+      Hint: heading
+      Value: Content List
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2d14bd02-bb4c-4c22-9362-c8cda4dc005c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211026T073417Z

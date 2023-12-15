@@ -1,0 +1,9 @@
+@model FieldUsageRichText
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+<sc-text asp-for="Sample"></sc-text>
+<section class="text-center" data-sample="other-attributes-pass-through">
+  <sc-text asp-for="Sample2"></sc-text>
+</section>

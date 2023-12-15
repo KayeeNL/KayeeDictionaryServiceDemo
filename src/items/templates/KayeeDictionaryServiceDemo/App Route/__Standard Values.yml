@@ -1,0 +1,75 @@
+﻿---
+ID: "b11c02d1-7749-5696-b6b2-e79fe34c2ecc"
+Parent: "89829df8-93ee-56be-b57a-8f9efa6ba0a6"
+Template: "89829df8-93ee-56be-b57a-8f9efa6ba0a6"
+Path: /sitecore/templates/Project/KayeeDictionaryServiceDemo/App Route/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{89829DF8-93EE-56BE-B57A-8F9EFA6BA0A6}"
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{BE7AE432-5A8A-59DD-9874-62218B1621A8}">
+        <p
+          uid="{92E2C277-5ED5-5200-90E1-FC867D5B0624}"
+          key="jss-main"
+          md="{9A42C347-8356-55B5-8EFE-0C8425A19927}" />
+        <p
+          uid="{0225D5A6-365D-583E-8C94-8381D0352060}"
+          key="jss-tabs"
+          md="{3E663C1F-5C69-5F5F-A76E-989028CE8B37}" />
+        <p
+          uid="{FEB253B1-10F8-5289-9034-165119F3FBC8}"
+          key="jss-graphql-layout"
+          md="{6ED65FBF-DA58-50D4-9A68-E8AEAC5DEA17}" />
+        <p
+          uid="{E405E1D0-C358-55CB-81C3-F7A96F994E40}"
+          key="jss-styleguide-layout"
+          md="{42DBB34E-C4CD-55D4-B845-35EF292563AE}" />
+        <p
+          uid="{B1A48C45-3FF4-548C-8A94-8AFDEC11C4BC}"
+          key="jss-styleguide-section"
+          md="{F0056F76-A313-552A-9811-3ADA61A448E1}" />
+        <p
+          uid="{E833A185-73CE-5BFD-B2CF-28D81D030E25}"
+          key="jss-header"
+          md="{B1E8F0B4-05F8-53A1-888F-51662092CFA2}" />
+        <p
+          uid="{C0858E4A-8D59-5AC6-9BF1-697B5BBB4D13}"
+          key="jss-reuse-example"
+          md="{3EE8A115-5566-5F58-9B17-886496DEADF1}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211013T135905Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\JssImport
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cf8e69f8-4c8b-46a3-b4aa-1e53fae66108"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211013T135910Z

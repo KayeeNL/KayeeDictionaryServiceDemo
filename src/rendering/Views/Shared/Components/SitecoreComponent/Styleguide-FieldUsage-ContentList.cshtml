@@ -1,0 +1,41 @@
+@model FieldUsageContentList
+
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+<h5>Shared Content List</h5>
+<div>
+  <p>
+    @if (Model.SharedContentList != null)
+    {
+      foreach (var sharedContent in Model.SharedContentList)
+      {
+        if (sharedContent.Target != null)
+        {
+          <div>
+            Field: <span asp-for="@sharedContent.Target.TextField"></span>
+          </div>
+        }
+      }
+    }
+  </p>
+</div>
+
+<h5>Local Content List</h5>
+<div>
+  <p>
+    @if (Model.LocalContentList != null)
+    {
+      foreach (var localContent in Model.LocalContentList)
+      {
+        if (localContent.Target != null)
+        {
+        <div>
+          Field: <span asp-for="@localContent.Target.TextField"></span>
+        </div>
+        }
+      }
+    }
+  </p>
+</div>

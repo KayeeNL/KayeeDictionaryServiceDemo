@@ -1,0 +1,8 @@
+@model HeadingOnly
+@{
+    var component = this.SitecoreComponent()!;
+}
+<div class="pt-3" id="@component.Id">
+  <h3 class="border-bottom" asp-for="Heading"></h3>
+  <sc-placeholder name="jss-styleguide-section"></sc-placeholder>
+</div>

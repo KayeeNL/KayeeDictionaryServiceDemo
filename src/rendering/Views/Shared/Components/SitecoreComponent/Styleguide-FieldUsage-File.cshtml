@@ -1,0 +1,8 @@
+@model FieldUsageFile
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+<a href="@Model.File?.Value?.Src">@Model.File?.Value?.Title</a>
+<br>
+<a href="@Model.File?.Value?.Src" target="_blank">Custom link body</a>

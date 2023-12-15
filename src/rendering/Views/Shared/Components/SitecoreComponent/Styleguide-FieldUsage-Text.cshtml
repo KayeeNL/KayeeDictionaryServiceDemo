@@ -1,0 +1,11 @@
+@model FieldUsageText
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+
+<span asp-for="Sample"></span>
+<section class="font-weight-bold" data-sample="other-attributes-pass-through">
+  <span asp-for="Sample2"></span>
+</section>
+<div>Raw value (not editable): @Model.Sample?.Value</div>

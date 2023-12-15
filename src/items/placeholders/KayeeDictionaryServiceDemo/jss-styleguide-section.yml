@@ -1,0 +1,59 @@
+﻿---
+ID: "f0056f76-a313-552a-9811-3ada61a448e1"
+Parent: "5afc4a80-64a5-507f-92cb-89c0423ea38c"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Project/KayeeDictionaryServiceDemo/jss-styleguide-section"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "jss-styleguide-section"
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {2C0EFD4C-32E1-5128-A2D8-BA6165992EEB}
+    {63EB1905-F726-5909-BA12-59C36F45CA5B}
+    {0EE4CC1B-E9E1-57F1-A843-51BABF4A05A1}
+    {58E2E95C-57CF-55BC-ACB1-4BF3D43E107B}
+    {70C4D671-AC5D-5F0E-B7E3-E1CF27E29755}
+    {655C50BE-BECC-57A3-9804-16547F5B9C2B}
+    {A615FCC3-E4D2-539B-9B5B-BEE3D61ADF0A}
+    {2DF733C2-A7F2-58FF-8334-ECDB494B1361}
+    {08BF9476-755C-54D8-81D4-2E17110A2A5E}
+    {AEEC32E6-3262-584D-8AD0-40B859BFB106}
+    {6DC38967-E8D7-5AA2-A4C8-D813071A9D12}
+    {42EDE370-459F-5109-8B20-B53262331036}
+    {4CF07DBE-DB33-5E31-919F-C4A7FD093948}
+    {527BA5D1-E523-5102-93A1-B8CBD213FDEE}
+    {DF97BCD6-E1D6-5A5B-A023-FC49B11ED24B}
+    {7788FB06-3C6C-5355-85DC-87E36B1A796A}
+    {DD21BC80-80E1-5986-8179-16E827383C60}
+    {0ACA4514-BAAB-53DA-B107-3B4F57CB3F55}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211013T135909Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\JssImport
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8dc4c8c0-bb81-424c-b088-5ebc6ea5c65d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211013T135913Z

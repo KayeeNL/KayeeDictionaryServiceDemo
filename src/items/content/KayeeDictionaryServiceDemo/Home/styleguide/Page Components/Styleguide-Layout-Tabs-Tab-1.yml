@@ -1,0 +1,43 @@
+﻿---
+ID: "0369f270-f5b0-54b7-a4ce-ecd6968a0e61"
+Parent: "f589e54c-c988-55c7-9210-a1fc8a0c2caf"
+Template: "2e01f950-be3b-5a14-922d-f2104cb9aa11"
+Path: "/sitecore/content/KayeeDictionaryServiceDemo/home/styleguide/Page Components/Styleguide-Layout-Tabs-Tab-1"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-Layout-Tabs-Tab-1"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211013T135913Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f75036c-1084-4808-ae5a-a2cc015adf77"
+    - ID: "9d20a002-a370-58e2-a12d-b38ae815dd55"
+      Hint: title
+      Value: Tab 1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211026T073417Z
+    - ID: "fb300089-4647-5424-a2c3-c15e8539518b"
+      Hint: content
+      Value: "<p>Tab 1 contents!</p>"

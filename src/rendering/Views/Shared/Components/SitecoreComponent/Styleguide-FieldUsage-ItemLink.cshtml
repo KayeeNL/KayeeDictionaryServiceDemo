@@ -1,0 +1,25 @@
+@model FieldUsageItemLink
+
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+<h5>Shared Item Link</h5>
+<div>
+  @if (Model.SharedItemLink != null && Model.SharedItemLink.Target != null)
+  {
+    <p>
+      Field: <span asp-for="@Model.SharedItemLink.Target.TextField"></span>
+    </p>
+  }
+</div>
+
+<h5>Local Item Link</h5>
+<div>
+  @if (Model.LocalItemLink != null && Model.LocalItemLink.Target != null)
+  {
+    <p>
+      Field: <span asp-for="@Model.LocalItemLink.Target.TextField"></span>
+    </p>
+  }
+</div>

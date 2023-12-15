@@ -1,0 +1,7 @@
+@model HeadingAndDescription
+@{
+    Layout = "_FieldUsageLayout";
+    var routeFields = this.SitecoreRoute()?.ReadFields<RouteFields>()!;
+}
+<p>Route level <code>pageTitle</code> field: <span asp-for="@routeFields.PageTitle"></span></p>
+<p><a href="/styleguide/custom-route-type">Sample of using a custom route type</a></p>

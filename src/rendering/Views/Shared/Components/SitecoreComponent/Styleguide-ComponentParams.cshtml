@@ -1,0 +1,20 @@
+@model HeadingAndDescription
+@{
+    Layout = "_FieldUsageLayout";
+    var component = this.SitecoreComponent()!;
+    var colCount = int.Parse(component.Parameters["columns"]);
+}
+<p class="@component.Parameters["cssClass"]">The CSS class of this paragraph (<code>@component.Parameters["cssClass"]</code>) is set using a param</p>
+<div>
+  useCallToAction param: <code>@component.Parameters["useCallToAction"]</code>
+  <br />
+  param type: <code>string</code>
+  <div class="alert alert-info">the call to action is shown</div>
+</div>
+<p>columns param: @colCount</p>
+<div class="row">
+  @for (var x = 0; x < colCount; x++)
+  {
+    <div class="col-sm">Column @x</div>
+  }
+</div>

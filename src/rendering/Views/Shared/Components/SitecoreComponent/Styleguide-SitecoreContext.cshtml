@@ -1,0 +1,19 @@
+@model HeadingAndDescription
+@{
+    var component = this.SitecoreComponent()!;
+    var serializerSettings = Sitecore.LayoutService.Client.Newtonsoft.NewtonsoftLayoutServiceSerializer.CreateSerializerSettings();    
+    var context = this.Context.GetSitecoreRenderingContext()?.Response?.Content?.Sitecore;
+    var jsonContext = Newtonsoft.Json.JsonConvert.SerializeObject(context, serializerSettings);
+}
+<div class="pt-3" id="@component.Id" data-e2e-id="@component.Name">
+  <h4 asp-for="Heading"></h4>
+  <div>
+    <sc-text asp-for="Description"></sc-text>
+  </div>
+  <div class="border p-2">
+    <p>The current Sitecore Context is...</p>
+    <pre style="max-height: 400px; overflow: scroll;">
+      @jsonContext
+    </pre>
+  </div>
+</div>

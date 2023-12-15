@@ -1,0 +1,56 @@
+@model HeadingAndDescription
+@{
+  var component = this.SitecoreComponent()!;
+  var tabs = component.Placeholders["jss-tabs"].OfType<Component>().ToList();
+}
+
+<div class="pt-3" id="@component.Id" data-e2e-id="@component.Name">
+  <h4 asp-for="Heading"></h4>
+  <div>
+    <sc-text asp-for="Description"></sc-text>
+  </div>
+  <div class="border p-2">
+    <ul class="nav nav-tabs">
+      @for (int index = 0; index < tabs.Count; index++)
+      {
+        if (!string.IsNullOrWhiteSpace(tabs[index].DataSource))
+        {
+          var typed = tabs[index].ReadFields<Tab>();
+          var linkCssClass = index > 0 ? "nav-link" : "nav-link active";
+          <li class="nav-item">
+            <a class="@linkCssClass" href="#t" onclick="setActiveTab(this, @index, @tabs.Count)">@typed.Title.Value</a>
+          </li>
+        }
+      }
+    </ul>
+    <div class="p-3 border-left border-right border-bottom">
+      @for (int index = 0; index < tabs.Count; index++)
+      {
+        var typed = tabs[index].ReadFields<Tab>();
+        var divHiddenAttribute = index > 0 ? "hidden" : string.Empty;
+        <div data-e2e-class="styleguide-layout-tabs-tab" @divHiddenAttribute>
+          <div>
+            <sc-text asp-for="@typed.Content"></sc-text>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function setActiveTab(element, index, count) {
+    var titleParent = element.parentNode.parentNode;
+    var contentParent = titleParent.nextElementSibling;
+
+    for (var i = 0; i < count; i++) {
+      if (i != index) {
+        titleParent.children[i].lastElementChild.classList.remove("active");
+        contentParent.children[i].setAttribute("hidden", "hidden");
+      } else {
+        titleParent.children[i].lastElementChild.classList.add("active");
+        contentParent.children[i].removeAttribute("hidden", "hidden");
+      }
+    }
+  }
+</script>

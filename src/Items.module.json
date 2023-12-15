@@ -1,0 +1,36 @@
+{
+    "namespace": "Items",
+    "items" : {
+        "includes": [
+            {
+                "name": "api-key",
+                "path": "/sitecore/system/Settings/Services/API Keys/KayeeDictionaryServiceDemo",
+                "scope": "singleItem"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/KayeeDictionaryServiceDemo"
+            },
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/KayeeDictionaryServiceDemo"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/KayeeDictionaryServiceDemo"
+            },
+            {
+                "name": "placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/KayeeDictionaryServiceDemo"
+            },
+            {
+                "name": "content",
+                "path": "/sitecore/content/KayeeDictionaryServiceDemo"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/KayeeDictionaryServiceDemo"
+            }
+        ]
+    }
+}

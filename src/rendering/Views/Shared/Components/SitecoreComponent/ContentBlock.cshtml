@@ -1,0 +1,19 @@
+@model ContentBlock
+@{
+  bool isReuse = ViewBag.IsReuse ?? false;
+}
+@if (isReuse)
+{
+  <div class="col-sm">
+    <div class="contentDescription">
+      <sc-text asp-for="Content" />
+    </div>
+  </div>
+}
+else
+{
+  <h2 class="display-4" asp-for="Heading"></h2>
+  <div class="contentDescription">
+    <sc-text asp-for="Content" />
+  </div>
+}

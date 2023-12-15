@@ -1,0 +1,16 @@
+@model FieldUsageLink
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+External link:&nbsp;
+<sc-link asp-for="ExternalLink"></sc-link>
+<br />
+  Internal link:&nbsp;
+<a asp-for="InternalLink"><em>HTML</em> or other components can be used within link renderers, for example links to images.</a>
+<br />Email link:&nbsp;
+<sc-link asp-for="EmailLink"></sc-link>
+<br />All possible content params link:&nbsp;
+<sc-link asp-for="ParamsLink" rel="noopener noreferrer"></sc-link>
+<br>The link component accepts params of its own:&nbsp;
+<sc-link asp-for="ExternalLink" class="font-weight-bold" data-otherattributes="pass-through-to-anchor-tag">Link to Sitecore</sc-link>

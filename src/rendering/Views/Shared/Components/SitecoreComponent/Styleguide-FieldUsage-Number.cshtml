@@ -1,0 +1,11 @@
+@model FieldUsageNumber
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+  <ul>
+    <li>Number Default Culture With Formatting: <sc-number asp-for="Sample" number-format="C"></sc-number>
+    <li>Number Specific Culture With Formatting: <sc-number asp-for="Sample" number-format="C" culture="ua-ua"></sc-number>
+    <li>Number Without Formatting: <sc-number asp-for="Sample"></sc-number>
+    <li>Span: <span asp-for="Sample" number-format="P"></span></li>
+  </ul>

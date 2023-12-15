@@ -1,0 +1,27 @@
+@model Component
+
+<div class="row">
+  <div class="col-sm-8 col-lg-10">
+    <sc-placeholder name="jss-styleguide-layout"></sc-placeholder>
+  </div>
+  <div class="col-sm-4 col-lg-2 order-sm-first pt-2">
+    @foreach (var sectionComponent in Model.Placeholders["jss-styleguide-layout"].OfType<Component>())
+    {
+      var fields = sectionComponent.ReadFields<HeadingOnly>();
+      <nav class="nav flex-column pt-2">
+        <a href="#@sectionComponent.Id" class="nav-item font-weight-bold">@fields.Heading.Value</a>
+        <nav class="nav flex-column">
+          @foreach (var sectionEntryComponent in sectionComponent.Placeholders["jss-styleguide-section"].OfType<Component>())
+          {
+            if (!string.IsNullOrEmpty(sectionEntryComponent.DataSource))
+            {
+              var sectionFields = sectionEntryComponent.ReadFields<HeadingOnly>();
+              <a href="#@sectionEntryComponent.Id">@sectionFields.Heading.Value</a>
+            }
+          }
+        </nav>
+      </nav>
+    }
+  </div>
+</div>
+

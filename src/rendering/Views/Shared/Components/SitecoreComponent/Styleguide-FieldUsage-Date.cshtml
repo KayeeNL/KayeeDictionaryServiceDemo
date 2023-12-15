@@ -1,0 +1,17 @@
+@using System.Security.Cryptography.X509Certificates
+@model FieldUsageDate
+@{
+  Layout = "_FieldUsageLayout";
+}
+
+  <ul>
+    <li>Date helper: <sc-date asp-for="Date" date-format="s"></sc-date>Z</li>
+    <li>Date helper (datetime): <sc-date asp-for="DateTime" date-format="s"></sc-date>Z</li>
+    <li>UTC Date string:&nbsp; <span asp-for="Date" date-format="ddd, dd MMM yyy HH:mm:ss GMT"></span></li>
+    <li>Localized Date string (local timezone):&nbsp;<sc-date asp-for="Date" date-format="d"></sc-date></li>
+    <li>Localized DateTime string (local timezone):&nbsp;<em><sc-date asp-for="DateTime"></sc-date></em></li>
+    <li>DateTime string with specified culture :&nbsp;<em><sc-date asp-for="DateTime" date-format="d" culture="ua-ua"></sc-date></em></li>
+  </ul>
+
+
+

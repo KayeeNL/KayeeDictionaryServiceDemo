@@ -1,0 +1,22 @@
+# folders
+.git
+.gitignore
+.vs
+.vscode
+.config
+.sitecore
+build
+docker
+packages
+**/bin/
+**/obj/
+**/out/
+
+# files
+*Dockerfile
+docker-compose*
+**/*.md
+*.ps1
+**/*.yml
+**/*.module.json
+sitecore.json

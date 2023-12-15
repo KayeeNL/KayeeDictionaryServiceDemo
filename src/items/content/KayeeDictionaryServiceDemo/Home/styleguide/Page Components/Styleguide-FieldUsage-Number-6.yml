@@ -1,0 +1,46 @@
+﻿---
+ID: "adcb9dc7-192d-5594-b457-2f53988490cf"
+Parent: "f589e54c-c988-55c7-9210-a1fc8a0c2caf"
+Template: "7dd36475-6af5-5ccc-8f30-bbfbdededa26"
+Path: "/sitecore/content/KayeeDictionaryServiceDemo/home/styleguide/Page Components/Styleguide-FieldUsage-Number-6"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Number-6"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b5ec70b-5882-5524-8d7e-5181b43978a6"
+      Hint: description
+      Value: <small>Number tells Sitecore to use a number entry for editing.</small>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211013T135912Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "50f09c11-8ca9-5d11-b492-47dca9604602"
+      Hint: sample
+      Value: 1.21
+    - ID: "82c593fe-d8ab-52e9-8e4e-5e7699457d81"
+      Hint: heading
+      Value: Number
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "08e6a788-8ace-47ed-a64e-bb528d21d083"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211026T073416Z
