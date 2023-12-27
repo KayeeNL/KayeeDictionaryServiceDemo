@@ -16,6 +16,7 @@ using Sitecore.LayoutService.Client.Extensions;
 using System.Collections.Generic;
 using System.Globalization;
 using Sitecore.AspNet.ExperienceEditor;
+using KayeeDictionaryServiceDemo.Services.Dictionary.Extensions;
 
 namespace KayeeDictionaryServiceDemo
 {
@@ -39,6 +40,7 @@ namespace KayeeDictionaryServiceDemo
             services.AddLocalization(options => { options.ResourcesPath = "Resources"; });
 
             services
+                .AddDictionaryService()
                 .AddSitecoreLayoutService()
                 .AddHttpHandler(handler.Name, handler.Uri)
                 .WithRequestOptions(request =>

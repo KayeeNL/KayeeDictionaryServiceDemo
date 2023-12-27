@@ -1,19 +1,40 @@
+@using KayeeDictionaryServiceDemo.Services.Dictionary.Models
 @model ContentBlock
+@inject IServiceProvider ServiceProvider 
+
 @{
-  bool isReuse = ViewBag.IsReuse ?? false;
+    bool isReuse = ViewBag.IsReuse ?? false;
+    var dictionaryModel = new DictionaryModel(ServiceProvider);
 }
+
+<h1>Here are translations from Dictionary Items:</h1>
+<p>
+    @dictionaryModel.GetDictionaryPhrase("Documentation", "DOCUMENTATION")
+</p>
+<p>
+    @dictionaryModel.GetDictionaryPhrase("GraphQL", "GRAPHQL")
+</p>
+<p>
+    @dictionaryModel.GetDictionaryPhrase("Styleguide", "STYLEGUIDE")
+</p>
+<p>
+    @dictionaryModel.GetDictionaryPhrase("styleguide-sample", "STYLEGUIDE-EXAMPLE")
+</p>
+
+
+
 @if (isReuse)
 {
-  <div class="col-sm">
-    <div class="contentDescription">
-      <sc-text asp-for="Content" />
+    <div class="col-sm">
+        <div class="contentDescription">
+            <sc-text asp-for="Content"/>
+        </div>
     </div>
-  </div>
 }
 else
 {
-  <h2 class="display-4" asp-for="Heading"></h2>
-  <div class="contentDescription">
-    <sc-text asp-for="Content" />
-  </div>
+    <h2 class="display-4" asp-for="Heading"></h2>
+    <div class="contentDescription">
+        <sc-text asp-for="Content"/>
+    </div>
 }
