@@ -1,5 +1,9 @@
 # KayeeDictionaryServiceDemo
 
+## Blogpost
+
+This code belongs to the blogpost 'Implementing a Headless Sitecore Dictionary Service with the ASP.NET Core Rendering SDK' at https://www.kayee.nl/2024/01/12/implementing-a-headless-sitecore-dictionary-service-with-the-asp-net-core-rendering-sdk/
+
 ## About this Solution
 This solution is designed to help developers learn and get started quickly
 with Sitecore Containers, the ASP.NET Core Rendering SDK, and Sitecore
